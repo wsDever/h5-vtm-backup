@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "modules": false,
+      "targets": {
+        "browsers": ["iOS >= 10", "Android >= 7"]
+      },
+      "debug": false,
+      "corejs": "3.0.1",
+      "useBuiltIns": "usage"
+    }]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/proposal-class-properties", { "loose": true }],
+    "@babel/plugin-transform-runtime",
+    "@babel/proposal-object-rest-spread",
+    "@babel/plugin-syntax-dynamic-import"
+  ]
+}

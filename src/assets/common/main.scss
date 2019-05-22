@@ -1,0 +1,94 @@
+@import './normalize';
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  font-size: 28px;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 0 20px;
+  outline: none;
+  border: none;
+
+  &::placeholder {
+    color: #BFBFBF;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $brand-primary-color;
+}
+
+nb-header-nav {
+  .left,
+  .title,
+  .right {
+    display: block;
+
+    i {
+      // 图标统一尺寸
+      font-size: 40px;
+    }
+  }
+
+  .left {
+    min-width: 100px;
+  }
+
+  .title {
+    min-width: 490px;
+
+    &.center {
+      text-align: center;
+      font-size: 36px;
+    }
+
+    &.left {
+      font-size: 40px;
+      font-weight: 500;
+    }
+  }
+
+  .right {
+    min-width: 100px;
+  }
+}
+
+#app {
+  height: 100vh;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  &.grey {
+    background: $layout-bg-color;
+  }
+}
+
+.flexCB {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.borderTop {
+  margin-top: 20px;
+  background-color: #fff;
+}
